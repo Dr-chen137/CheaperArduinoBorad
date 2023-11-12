@@ -1,0 +1,217 @@
+{
+  "packages": [
+    {
+      "name": "DrChen",
+      "maintainer": "Chen",
+      "websiteURL": "https://github.com/Dr-chen137",
+      "email": "HalfSweet@HalfSweet.cn",
+      "help": {
+        "online": "https://arduino.luatos.com"
+      },
+      "platforms": [
+        {
+          "name": "Cheaper Arduino",
+          "architecture": "CheaprArduino",
+          "version": "0.0.1",
+          "category": "Contributed",
+          "help": {
+            "online": "https://arduino.luatos.com"
+          },
+          "url": "https://github.com/Dr-chen137/CheaperArduinoBorad/releases/download/0.0.1/CheaperArduinoBorad0.0.1.zip",
+          "archiveFileName": "CheaperArduinoBorad0.0.1.zip",
+          "checksum": "SHA-256:4D4EFE3678B3A1EE5050C490DBB093F231C18D6FB73926E9E68B236945850358",
+          "size": "500056",
+          "boards": [
+            {
+              "name": "Chearper_Arduino_Broad"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "AirM2M",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "13.2.1-1.1"
+            },
+            {
+              "packager": "AirM2M",
+              "name": "CMSIS",
+              "version": "5.7.0"
+            },
+            {
+              "packager": "AirM2M",
+              "name": "AirISP",
+              "version": "1.2.8.0"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "xpack-arm-none-eabi-gcc",
+          "version": "13.2.1-1.1",
+          "systems": [
+            {
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-win32-x64.zip",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-win32-x64.zip",
+              "checksum": "SHA-256:56b18ccb0a50f536332ec5de57799342ff0cd005ca2c54288c74759b51929e4f",
+              "size": "306340878"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-win32-x64.zip",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-win32-x64.zip",
+              "checksum": "SHA-256:56b18ccb0a50f536332ec5de57799342ff0cd005ca2c54288c74759b51929e4f",
+              "size": "306340878"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-x64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-x64.tar.gz",
+              "checksum": "SHA-256:1ecc0fd6c31020aff702204f51459b4b00ff0d12b9cd95e832399881d819aa57",
+              "size": "262217286"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-arm64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-darwin-arm64.tar.gz",
+              "checksum": "SHA-256:d4ce0de062420daab140161086ba017642365977e148d20f55a8807b1eacd703",
+              "size": "258277148"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm.tar.gz",
+              "checksum": "SHA-256:9a6db147c34f7ea668cc37a139d2667a58f8b2bbee2359f23e48ffd300f8fc2f",
+              "size": "257683778"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm64.tar.gz",
+              "checksum": "SHA-256:ab7f75d95ead0b1efb7432e7f034f9575cc3d23dc1b03d41af1ec253486d19de",
+              "size": "265190134"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-x64.tar.gz",
+              "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-x64.tar.gz",
+              "checksum": "SHA-256:1252a8cafe9237de27a765376697230368eec21db44dc3f1edeb8d838dabd530",
+              "size": "268158135"
+            }
+          ]
+        },
+        {
+          "name": "CMSIS",
+          "version": "5.7.0",
+          "systems": [
+            {
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.7.0/CMSIS-5.7.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.7.0.tar.bz2",
+              "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
+              "size": "26151901"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.7.0/CMSIS-5.7.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.7.0.tar.bz2",
+              "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
+              "size": "26151901"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.7.0/CMSIS-5.7.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.7.0.tar.bz2",
+              "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
+              "size": "26151901"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.7.0/CMSIS-5.7.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.7.0.tar.bz2",
+              "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
+              "size": "26151901"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.7.0/CMSIS-5.7.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.7.0.tar.bz2",
+              "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
+              "size": "26151901"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.7.0/CMSIS-5.7.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.7.0.tar.bz2",
+              "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
+              "size": "26151901"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.7.0/CMSIS-5.7.0.tar.bz2",
+              "archiveFileName": "CMSIS-5.7.0.tar.bz2",
+              "checksum": "SHA-256:0b04b0f214e483bcc360cda985cddc0de8031714019ceabcda4770d510b82bfe",
+              "size": "26151901"
+            }
+          ]
+        },
+        {
+          "name": "AirISP",
+          "version": "1.2.8.0",
+          "systems": [
+            {
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/Air-duino/AirISP/releases/download/1.2.8.0/AirISP-win-x64.zip",
+              "archiveFileName": "AirISP-win-x64.zip",
+              "checksum": "SHA-256:acfe73f0eea634767259493437484508d2e1f7807c7a1a2a874a9ba4545bd92c",
+              "size": "5624985"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/Air-duino/AirISP/releases/download/1.2.8.0/AirISP-win-x64.zip",
+              "archiveFileName": "AirISP-win-x64.zip",
+              "checksum": "SHA-256:acfe73f0eea634767259493437484508d2e1f7807c7a1a2a874a9ba4545bd92c",
+              "size": "5624985"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/Air-duino/AirISP/releases/download/1.2.8.0/AirISP-osx-x64.tar",
+              "archiveFileName": "AirISP-osx-x64.tar",
+              "checksum": "SHA-256:d17ade2452ccdd58fc16f54a2b44588537965480dd710ac4b9d0939b65af0d61",
+              "size": "14305280"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/Air-duino/AirISP/releases/download/1.2.8.0/AirISP-osx-arm64.tar",
+              "archiveFileName": "AirISP-osx-arm64.tar",
+              "checksum": "SHA-256:25cbca2f84787e4eebb5af09e1a5aecdc18dda3bbd7dc2ead2e2ee80b0d1fa60",
+              "size": "20602880"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/Air-duino/AirISP/releases/download/1.2.8.0/AirISP-linux-arm.tar",
+              "archiveFileName": "AirISP-linux-arm.tar",
+              "checksum": "SHA-256:7c6c3fd0d6eab79f5144faea913e9d202f089cf81c2f854a241c8e66d657cb3a",
+              "size": "10004480"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/Air-duino/AirISP/releases/download/1.2.8.0/AirISP-linux-arm64.tar",
+              "archiveFileName": "AirISP-linux-arm64.tar",
+              "checksum": "SHA-256:ca440082ab4a9c761ee8b34c60e3f581c7c6daa5e042bc3ca03f9a57534d34ca",
+              "size": "13762560"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/Air-duino/AirISP/releases/download/1.2.8.0/AirISP-linux-x64.tar",
+              "archiveFileName": "AirISP-linux-x64.tar",
+              "checksum": "SHA-256:51b5a299c4989d94b2b5e025054cad1e34cf170c18b34578284d28447d10f45c",
+              "size": "14489600"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
