@@ -12,7 +12,7 @@
     <a href="https://arduino.luatos.com/"><img alt="Document" src="https://img.shields.io/badge/document-online-blue"></a>
 </p>
 
-该branch基于AirMCU，针对CheaperArduinoBorad进行Air001的引脚重映射，方便使用
+该branch基于AirMCU，针对CheaperArduinoBorad进行Air001的引脚重映射，方便使用.\n
 AirMCU 是一个由社区推动，旨在适配上海合宙通信有限公司的 Arm-Cortex 系列 MCU 的 Arduino 框架。
 
 ## 文档与上手教程
