@@ -17,14 +17,6 @@ menu.upload_method=Upload method
 # Air001 设置方式
 menu.ClockSourceAndFrequency=Clock Source and Frequency
 
-# Air32 设置
-menu.ClockSoure=Clock Source
-menu.SysFreq=System Frequency
-
-menu.LowSpeedClockSource=Low Speed Clock Source
-
-menu.SupplyVoltage=Supply Voltage
-
 ###############################
 # Air001 Dev
 ###############################
@@ -178,81 +170,10 @@ Air001Dev.build.extra_flags={build.temp} -DF_CPU={build.f_cpu} {build.lsc_temp} 
 # Upload menu
 
 ###############################
-# Air32F103xx
+# Cheaper Arduino Board
 ###############################
 
-Air32F103xx.name=Air32F103 Series
-
-Air32F103xx.upload.maximum_size=0
-# 96KB的RAM
-Air32F103xx.upload.maximum_data_size=98304 
-
-Air32F103xx.upload.tool=AirISP
-Air32F103xx.upload.tool.default=AirISP
-
-Air32F103xx.build.core=AirMCU
-Air32F103xx.build.board=AIR32F103
-Air32F103xx.build.mcu=cortex-m3
-Air32F103xx.build.series=AIR32F103xx
-Air32F103xx.build.cmsis_lib_gcc=arm_cortexM3l_math
-Air32F103xx.build.air_extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
-Air32F103xx.build.drivers_include="-I{build.system.path}/Arduino-Air32F103-Drivers/AIR32F1xx_HAL_Driver/Inc" "-I{build.system.path}/Arduino-Air32F103-Drivers/AIR32F1xx_HAL_Driver/Src" "-I{build.system.path}/AIR32F103xx" "-I{build.system.path}/Arduino-Air32F103-Drivers/CMSIS/Device/AIR32F1xx/Include/" "-I{build.system.path}/Arduino-Air32F103-Drivers/CMSIS/Device/AIR32F1xx/Source/gcc/" 
-
-Air32F103xx.menu.UploadSpeed.115200=115200
-Air32F103xx.menu.UploadSpeed.115200.upload.speed=115200
-Air32F103xx.menu.UploadSpeed.57600=57600
-Air32F103xx.menu.UploadSpeed.57600.upload.speed=57600
-Air32F103xx.menu.UploadSpeed.38400=38400
-Air32F103xx.menu.UploadSpeed.38400.upload.speed=38400
-Air32F103xx.menu.UploadSpeed.19200=19200
-Air32F103xx.menu.UploadSpeed.19200.upload.speed=19200
-Air32F103xx.menu.UploadSpeed.9600=9600
-Air32F103xx.menu.UploadSpeed.9600.upload.speed=9600
-Air32F103xx.menu.UploadSpeed.4800=4800
-Air32F103xx.menu.UploadSpeed.4800.upload.speed=4800
-Air32F103xx.menu.UploadSpeed.2400=2400
-Air32F103xx.menu.UploadSpeed.2400.upload.speed=2400
-Air32F103xx.menu.UploadSpeed.1200=1200
-Air32F103xx.menu.UploadSpeed.1200.upload.speed=1200
-
-Air32F103xx.menu.ClockSoure.HSE8M=HSE (8Mhz)
-Air32F103xx.menu.ClockSoure.HSE8M.build.ClockSoureTemp=-DUSE_HSE
-Air32F103xx.menu.ClockSoure.HSE8M.build.ClockSoure=8000000L
-Air32F103xx.menu.ClockSoure.HSE16M=HSE (16Mhz)
-Air32F103xx.menu.ClockSoure.HSE16M.build.ClockSoureTemp=-DUSE_HSE
-Air32F103xx.menu.ClockSoure.HSE16M.build.ClockSoure=16000000L
-Air32F103xx.menu.ClockSoure.HSI8M=HSI (8Mhz)
-Air32F103xx.menu.ClockSoure.HSI8M.build.ClockSoureTemp=-DUSE_HSI
-Air32F103xx.menu.ClockSoure.HSI8M.build.ClockSoure=8000000L
-
-Air32F103xx.menu.SysFreq.PCLK72M=72Mhz
-Air32F103xx.menu.SysFreq.PCLK72M.build.f_cpu=72000000L
-Air32F103xx.menu.SysFreq.PCLK64M=64Mhz
-Air32F103xx.menu.SysFreq.PCLK64M.build.f_cpu=64000000L
-Air32F103xx.menu.SysFreq.PCLK216M=216Mhz
-Air32F103xx.menu.SysFreq.PCLK216M.build.f_cpu=216000000L
-Air32F103xx.menu.SysFreq.PCLK256M=256Mhz
-Air32F103xx.menu.SysFreq.PCLK256M.build.f_cpu=256000000L
-
-Air32F103xx.menu.pnum.AIR32F103CB=Air32F103CBT6
-Air32F103xx.menu.pnum.AIR32F103CB.upload.maximum_size=131072
-Air32F103xx.menu.pnum.AIR32F103CB.build.product_line=AIR32F103xB
-Air32F103xx.menu.pnum.AIR32F103CB.build.board=AIR32F103CB
-Air32F103xx.menu.pnum.AIR32F103CB.build.variant=AIR32F103/F103CB
-
-# boot
-Air32F103xx.menu.BootConnection.defaule=default isp circuit
-Air32F103xx.menu.BootConnection.defaule.upload.boot=default_reset
-Air32F103xx.menu.BootConnection.direct=direct connect
-Air32F103xx.menu.BootConnection.direct.upload.boot=direct_connect
-
-Air32F103xx.build.extra_flags={build.ClockSoureTemp} -DCLOCK_SOURCE={build.ClockSoure} -DF_CPU={build.f_cpu} -DAIR32F1xx
-
-###############################
-# AirM2M Air001 Board
-###############################
-
-AirM2M_Air001_Board.name=AirM2M Air001 Board
+AirM2M_Air001_Board.name=Budget Arduino Board
 
 AirM2M_Air001_Board.upload.maximum_size=32768
 AirM2M_Air001_Board.upload.maximum_data_size=4096
@@ -261,7 +182,7 @@ AirM2M_Air001_Board.upload.tool=AirISP
 AirM2M_Air001_Board.upload.tool.default=AirISP
 
 AirM2M_Air001_Board.build.core=AirMCU
-AirM2M_Air001_Board.build.board=AirM2M_Air001_Board
+AirM2M_Air001_Board.build.board=BudgetArduinoBoard
 AirM2M_Air001_Board.build.mcu=cortex-m0plus
 AirM2M_Air001_Board.build.series=AIR001xx
 AirM2M_Air001_Board.build.cmsis_lib_gcc=arm_cortexM0l_math
