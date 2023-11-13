@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/Dr-chen137/CheaperArduinoBorad/releases/download/0.0.1/CheaperArduinoBorad0.0.1.zip",
           "archiveFileName": "CheaperArduinoBorad0.0.1.zip",
-          "checksum": "SHA-256:42D874E06D32D3A67ACF26103F161DE604D1482F7FD5231447749D356E6E310F",
-          "size": "499316",
+          "checksum": "SHA-256:8AD50A6FD4F5E6EF10BA82C0CE6DE5AAFE02398E5047602B14C3C2D9B4783AA8",
+          "size": "3252828",
           "boards": [
             {
               "name": "Budget_Arduino_Broad"
