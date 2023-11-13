@@ -19,9 +19,9 @@ compiler.libraries.ldflags=
 # 需要额外引入的头文件的路径
 compiler.air.extra_include="-I{build.source.path}" "-I{build.core.path}/avr" "-I{build.core.path}/air" "-I{build.core.path}/air/LL" "-I{build.core.path}/air/usb" "-I{build.core.path}/air/usb/hid" "-I{build.core.path}/air/usb/cdc" {build.virtio_extra_include} {build.drivers_include}
 
-compiler.c.extra_flags=-I{build.core.path}/air
-compiler.cpp.extra_flags=-I{build.core.path}/air
-compiler.S.extra_flags=-I{build.core.path}/air
+compiler.c.extra_flags=
+compiler.cpp.extra_flags=
+compiler.S.extra_flags=
 # 编译器警告的参数
 compiler.warning_flags=-w
 compiler.warning_flags.none=-w
