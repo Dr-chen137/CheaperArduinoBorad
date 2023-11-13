@@ -61,13 +61,13 @@ build.variant_h=variant_generic.h
 
 # These can be overridden in platform.local.txt 在platform.local.txt中选择的参数会覆盖下面这些
 compiler.c.air_extra_flags={build.peripheral_pins}
-compiler.c.extra_flags=
+compiler.c.extra_flags=-I{build.core.path}/air
 compiler.c.std=gnu17
 compiler.c.elf.extra_flags=
-compiler.cpp.extra_flags=
+compiler.cpp.extra_flags=-I{build.core.path}/air
 compiler.cpp.std=gnu++17
 compiler.S.air_extra_flags={build.startup_file}
-compiler.S.extra_flags=
+compiler.S.extra_flags=-I{build.core.path}/air
 compiler.ar.extra_flags=
 compiler.elf2bin.extra_flags=
 compiler.elf2hex.extra_flags=
